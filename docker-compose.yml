@@ -1,0 +1,10 @@
+version: "3"
+services:
+  playground:
+    image: playground:latest
+    container_name: playground
+    command: python main.py
+    expose:
+      - "7861"
+    ports:
+      - "7861:7861"
