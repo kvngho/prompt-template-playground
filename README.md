@@ -5,6 +5,11 @@
 
 ## QuickStart (Using Docker)
 
+0. Clone this repo
+   ```shell
+   git clone https://github.com/kvngho/prompt-template-playground.git
+   cd prompt-template-playground/
+   ```
 1. [Install Docker](https://docker.io)
 2. Build the docker image
     ```shell
@@ -14,4 +19,4 @@
     ```shell
     docker compose up -d
     ```
-4. You can see playgournd in http://127.0.0.1:7681/
+4. You can see playground in http://127.0.0.1:7681/
