@@ -1,5 +1,5 @@
 from typing import List
-
+import gradio as gr
 import requests
 from bs4 import BeautifulSoup
 from textrankr import TextRank
@@ -32,6 +32,19 @@ class PlayGround:
 
     @classmethod
     def start(cls, *args) -> str:
+        if not args[0]:
+            raise gr.Error('URL is required')
+        if '{content}' not in args[1]:
+            raise gr.Error('Prompt template must include "{content}"')
+        if not args[1]:
+            raise gr.Error('Prompt template is required')
+        if not args[2]:
+            raise gr.Error('Tokenizer is required')
+        if not args[3]:
+            raise gr.Error('Number of sentences is required')
+        if not args[4]:
+            raise gr.Error('openai api key is required')
+
         try:
             cls.urls: str = args[0]
             cls.crawl_result: str = cls.crawl(cls)
