@@ -4,3 +4,14 @@
 
 
 ## QuickStart (Using Docker)
+
+1. [Install Docker](https://docker.io)
+2. Build the docker image
+    ```shell
+    docker build -t playground .
+    ```
+3. Run docker compose
+    ```shell
+    docker compose up -d
+    ```
+4. You can see playgournd in http://127.0.0.1:7681/
