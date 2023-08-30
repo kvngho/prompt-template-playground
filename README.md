@@ -20,4 +20,4 @@
     ```shell
     docker compose up -d
     ```
-4. You can see playground in http://127.0.0.1:7681/
+4. You can see playground in http://localhost:7861
